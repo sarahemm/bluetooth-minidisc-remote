@@ -1,0 +1,48 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 6b15b302-b5ff-496e-b375-a274f063c30a)
+
+  (paper "USLetter")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 326.39 143.51) (size 182.88 72.39) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6)
+    (property "Sheetname" "Power + Charging" (at 326.39 142.7984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "bt-md-remote-power.kicad_sch" (at 326.39 216.4846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "bt-md-remote"
+        (path "/6b15b302-b5ff-496e-b375-a274f063c30a" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 327.152 0.508) (size 182.88 130.556) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid bf5f04bd-5746-4833-a837-a9f60bfc0a78)
+    (property "Sheetname" "IO" (at 327.152 -0.2036 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "bt-md-remote-io.kicad_sch" (at 327.152 131.6486 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "bt-md-remote"
+        (path "/6b15b302-b5ff-496e-b375-a274f063c30a" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
