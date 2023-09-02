@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "md-bt-remote")(type "KiCad")(uri "${KIPRJMOD}/md-bt-remote.kicad_sym")(options "")(descr ""))
+)

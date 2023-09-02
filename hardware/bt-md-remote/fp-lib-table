@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "bt-md-remote")(type "KiCad")(uri "${KIPRJMOD}/bt-md-remote.pretty")(options "")(descr ""))
+)

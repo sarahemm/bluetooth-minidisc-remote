@@ -8,6 +8,23 @@
   )
 
 
+  (sheet (at 515.62 0) (size 175.26 132.08) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 085d11a3-92ba-41eb-90be-60e21dbe6098)
+    (property "Sheetname" "UI" (at 515.62 -0.7116 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "bt-md-remote-ui.kicad_sch" (at 515.62 132.6646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "bt-md-remote"
+        (path "/6b15b302-b5ff-496e-b375-a274f063c30a" (page "4"))
+      )
+    )
+  )
+
   (sheet (at 326.39 143.51) (size 182.88 72.39) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
