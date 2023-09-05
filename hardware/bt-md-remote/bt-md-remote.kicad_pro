@@ -34,7 +34,7 @@
   "erc": {
     "erc_exclusions": [
       "pin_to_pin|1422400|495300|f8e64462-0acc-4956-bd2f-4e2eea78fdcf|3c1d7bee-34b7-44db-acdd-96485c00c506|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a/9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6",
-      "pin_to_pin|2184400|711200|bcd0e69c-a5d8-4c55-9efc-4ec81476c100|0b5c2780-62c8-4fd2-8e82-51dd0c3d18be|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a/9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6",
+      "pin_to_pin|2184400|711200|bcd0e69c-a5d8-4c55-9efc-4ec81476c101|0b5c2780-62c8-4fd2-8e82-51dd0c3d18be|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a/9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6",
       "pin_to_pin|2184400|736600|ad8d5bc7-6e31-470f-a0fd-13a29f4be8c2|0b5c2780-62c8-4fd2-8e82-51dd0c3d18be|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a/9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6"
     ],
     "meta": {
@@ -317,7 +317,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../../../../Desktop/remote-pdf",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
