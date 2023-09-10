@@ -2673,7 +2673,7 @@
     (property "Value" "DA7218" (at 206.6641 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 175.26 38.1 0)
+    (property "Footprint" "bt-md-remote:DIALOG-DA7218" (at 175.26 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 175.26 38.1 0)
