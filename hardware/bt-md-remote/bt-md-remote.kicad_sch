@@ -3301,7 +3301,7 @@
     (property "Value" "PAN1326C2" (at 148.2441 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 123.19 54.61 0)
+    (property "Footprint" "bt-md-remote:PANASONIC-PAN1326C2" (at 123.19 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 123.19 54.61 0)
