@@ -1185,6 +1185,11 @@
     (uuid fe97d0d4-9164-4924-9cac-35731cc6b80b)
   )
 
+  (label "PLAYPAUSE_HOLD" (at 38.1 35.56 0) (fields_autoplaced)
+    (effects (font (size 0.25 0.25)) (justify left bottom))
+    (uuid e186ceed-45bd-4c19-9683-4bdfd1a8c2ed)
+  )
+
   (global_label "HOLD_XCPT_VOL" (shape input) (at 58.42 144.78 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 360aab2f-ac6a-4532-9acd-cddea9320c86)
