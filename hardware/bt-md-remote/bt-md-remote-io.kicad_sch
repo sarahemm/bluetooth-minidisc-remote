@@ -2521,6 +2521,15 @@
     (uuid e3443604-ad69-4ca0-9870-d5b3084071c1)
   )
 
+  (label "I2C_SDA_HV" (at 172.72 44.45 270) (fields_autoplaced)
+    (effects (font (size 0.5 0.5)) (justify right bottom))
+    (uuid 2a375f28-5537-4924-9a68-e5e7c26b2e3d)
+  )
+  (label "I2C_SCL_HV" (at 172.72 39.37 90) (fields_autoplaced)
+    (effects (font (size 0.5 0.5)) (justify left bottom))
+    (uuid acc6f367-3180-4181-8870-8c4fbf9df451)
+  )
+
   (global_label "AUDIO_IN_R" (shape output) (at 96.52 74.93 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 09943e0d-d2c1-4087-b299-a4ebb0752e47)
