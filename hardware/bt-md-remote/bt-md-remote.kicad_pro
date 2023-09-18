@@ -48,7 +48,13 @@
           "min_clearance": 0.15239999999999998
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -116,10 +122,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.254,
         "min_track_width": 0.0,
         "min_via_annular_width": 0.127,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.254,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -165,8 +171,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -177,12 +190,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_to_pin|1422400|495300|f8e64462-0acc-4956-bd2f-4e2eea78fdcf|3c1d7bee-34b7-44db-acdd-96485c00c506|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a/9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6",
-      "pin_to_pin|2184400|711200|bcd0e69c-a5d8-4c55-9efc-4ec81476c101|0b5c2780-62c8-4fd2-8e82-51dd0c3d18be|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a/9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6",
-      "pin_to_pin|2184400|711200|bcd0e69c-a5d8-4c55-9efc-4ec81476c102|0b5c2780-62c8-4fd2-8e82-51dd0c3d18be|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a/9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6",
-      "pin_to_pin|2184400|736600|ad8d5bc7-6e31-470f-a0fd-13a29f4be8c2|0b5c2780-62c8-4fd2-8e82-51dd0c3d18be|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a|/6b15b302-b5ff-496e-b375-a274f063c30a/9acc3764-8b4b-42bb-bb01-38d0d1e6ebe6"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -404,7 +412,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1524,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -414,7 +422,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
+        "track_width": 0.127,
         "via_diameter": 0.6,
         "via_drill": 0.254,
         "wire_width": 6
