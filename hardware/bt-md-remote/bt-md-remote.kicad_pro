@@ -38,11 +38,11 @@
           "height": 0.19,
           "width": 0.19
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.125,
         "silk_text_italic": false,
-        "silk_text_size_h": 0.75,
-        "silk_text_size_v": 0.75,
-        "silk_text_thickness": 0.15,
+        "silk_text_size_h": 0.5,
+        "silk_text_size_v": 0.5,
+        "silk_text_thickness": 0.125,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.15239999999999998
@@ -55,7 +55,17 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|108619000|119126000|d37224a2-0139-4fae-b634-9ddbaf93f2c2|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|154238000|130649000|e44f5957-13ec-4141-874d-52610687228d|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|108204000|120974215|80556046-7f1f-4b50-982d-68a9a788b510|0a4475e5-b161-4ca8-ae68-fe8642332ac0",
+        "silk_edge_clearance|108204000|122474215|80556046-7f1f-4b50-982d-68a9a788b510|42cf310b-b708-4e89-bc93-5c6dbc1290aa",
+        "silk_over_copper|170651616|112850000|655b3cb8-0d66-4a8e-8b08-ca923fa1bf15|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|188572768|116258000|d832f2db-6c72-426e-a0e3-ab797dd8ffa5|00000000-0000-0000-0000-000000000000",
+        "silk_overlap|112344560|111727214|d84c72b2-fa86-4325-bafe-fd1c16582b32|aa42ed2d-aea7-4563-865b-0433d21115a7",
+        "silk_overlap|169451616|112850000|655b3cb8-0d66-4a8e-8b08-ca923fa1bf15|4b3400fa-704e-4dc8-a02c-0e7fa77c79b5",
+        "silk_overlap|170851616|112850000|655b3cb8-0d66-4a8e-8b08-ca923fa1bf15|ddf3e7e7-c252-4366-9b19-e6e941552cba"
+      ],
       "meta": {
         "version": 2
       },
@@ -120,8 +130,8 @@
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
-        "min_text_thickness": 0.08,
+        "min_text_height": 0.5,
+        "min_text_thickness": 0.125,
         "min_through_hole_diameter": 0.254,
         "min_track_width": 0.0,
         "min_via_annular_width": 0.127,
