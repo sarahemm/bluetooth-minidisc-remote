@@ -25,5 +25,5 @@ fp-info-cache
 *.ses
 
 # Exported BOM files
-*.xml
-*.csv
+hardware/bt-md-remote/*.xml
+hardware/bt-md-remote/*.csv
