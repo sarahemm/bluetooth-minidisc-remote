@@ -8,14 +8,13 @@
 
 #include <xc.h>
 
-#include "pins.h"
-#include "display.h"
-#include "bluetooth.h"
+#include "main.h"
 
 void main(void) {
     // initialize all the modules
     disp_init();
     bt_init();
     
+    disp_power_on();
     return;
 }

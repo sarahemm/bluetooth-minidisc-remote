@@ -10,4 +10,6 @@
 
 int bt_init(void) {
     // TODO: set up the NCO to generate BT_SLOW_CLK
+    
+    return 0;
 }

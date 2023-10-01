@@ -19,7 +19,12 @@ extern "C" {
 #define pin_low(lat,pin)        (lat &= ~(1 << pin))
 #define pin_high(lat,pin)       (lat |= 1 << pin)
 
+#define interrupts_off() (INTCON0bits.GIE = 0)
+#define interrupts_on()  (INTCON0bits.GIE = 1)
 
+    void pps_unlock(void);
+    void pps_lock(void);
+ 
 #ifdef	__cplusplus
 }
 #endif

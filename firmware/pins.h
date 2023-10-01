@@ -92,6 +92,16 @@ extern "C" {
     #define OLED_nRESET_TRIS        TRISD
     #define OLED_nRESET_LAT         LATD
 
+    // per Rev001 ECO A
+    #define OLED_16V_PIN            5
+    #define OLED_16V_TRIS           TRISB
+    #define OLED_16V_LAT            LATB
+
+    #define OLED_SCLK_PPS           RC3PPS
+    #define OLED_MOSI_PPS           RC4PPS
+    #define OLED_nSS_PPS            RA5PPS
+
+
 #ifdef	__cplusplus
 }
 #endif
