@@ -18,7 +18,10 @@ extern "C" {
     
 #define pin_low(lat,pin)        (lat &= ~(1 << pin))
 #define pin_high(lat,pin)       (lat |= 1 << pin)
-
+    
+#define i2c_ack_received()      (I2C2CON1bits.ACKSTAT == 0)
+#define i2c_wait_for_tx_done()  while(I2C2STAT0bits.MMA == 1) __delay_us(10)
+    
 #define interrupts_off() (INTCON0bits.GIE = 0)
 #define interrupts_on()  (INTCON0bits.GIE = 1)
 

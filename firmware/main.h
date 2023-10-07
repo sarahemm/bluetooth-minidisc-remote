@@ -12,6 +12,7 @@
 extern "C" {
 #endif
 
+#include "fuelgauge.h"
 #include "bluetooth.h"
 #include "display.h"
 #include "pins.h"

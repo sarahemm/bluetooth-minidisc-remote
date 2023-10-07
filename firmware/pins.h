@@ -113,7 +113,15 @@ extern "C" {
 #define BT_SLOWCLK_PPS          RD0PPS
 #define BT_TX_PPS               RC5PPS
 #define BT_RTS_PPS              RC1PPS
-    
+
+/* --- */
+/* I2C */
+/* --- */
+
+#define I2C_TXB     I2C2TXB
+#define I2C_TXCNT   I2C2CNT
+#define I2C_RXB     I2C2TXB
+
 #ifdef	__cplusplus
 }
 #endif

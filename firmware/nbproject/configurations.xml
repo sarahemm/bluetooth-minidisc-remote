@@ -22,6 +22,8 @@
       <itemPath>util.c</itemPath>
       <itemPath>main.h</itemPath>
       <itemPath>confreg.h</itemPath>
+      <itemPath>fuelgauge.c</itemPath>
+      <itemPath>fuelgauge.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
