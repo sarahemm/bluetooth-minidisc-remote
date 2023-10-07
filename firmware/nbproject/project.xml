@@ -13,7 +13,11 @@
             </sourceRootList>
             <confList>
                 <confElem>
-                    <name>default</name>
+                    <name>Simulator</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>Production</name>
                     <type>2</type>
                 </confElem>
             </confList>

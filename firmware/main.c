@@ -8,6 +8,7 @@
 
 #include <xc.h>
 
+#include "confreg.h"
 #include "main.h"
 
 void main(void) {
