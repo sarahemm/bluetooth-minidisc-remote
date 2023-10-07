@@ -53,10 +53,12 @@ void disp_power_on(void) {
     
     pin_high(OLED_nRESET_LAT, OLED_nRESET_PIN); // reset deasserted
     __delay_us(100);                            // wait 100uS
+    // disable the integrated Vdd regulator (we supply that ourself)
+    disp_send_2b_cmd(DISPCMD_VDDREG, DISPARG_VDDREG_EXT);
     pin_high(OLED_16V_LAT, OLED_16V_PIN);       // turn on 16.5v rail
     __delay_us(500);                            // let the rail come up
                                                 // TODO: tune the rail-up time
-    disp_send_cmd(DISPCMD_POWER_ON);        // ask the display to turn on
+    disp_send_cmd(DISPCMD_POWER_ON);            // ask the display to turn on
 }
 
 void disp_power_off(void) {
@@ -70,7 +72,18 @@ void disp_power_off(void) {
 }
 
 void disp_send_cmd(uint8_t cmd) {
+    // make sure we're not still txing the last thing before we change the D/C pin
+    while(SPI1STATUSbits.TXBE == 0) __delay_us(100);
+    
     pin_low(OLED_DC_LAT, OLED_DC_PIN);  // we're sending a command
     SPI1TXB = cmd;
-    // TODO: probably need to wait after
+}
+
+void disp_send_2b_cmd(uint8_t cmd, uint8_t arg) {
+    // make sure we're not still txing the last thing before we change the D/C pin
+    while(SPI1STATUSbits.TXBE == 0) __delay_us(100);
+    
+    pin_low(OLED_DC_LAT, OLED_DC_PIN);  // we're sending a command
+    SPI1TXB = cmd;
+    SPI1TXB = arg;
 }
