@@ -14,14 +14,16 @@ extern "C" {
     
 #define FG_I2C_ADDR         0x6C
 
-#define FG_REG_STATUS       0x00
-#define FG_REG_FSTAT        0x3D
-#define FG_REG_HIBCFG       0xBA
-#define FG_REG_SOFTWAKE     0x60
-#define FG_REG_MODELCFG     0xDB
-#define FG_REG_DESIGNCAP    0x18
-#define FG_REG_ICHGTERM     0x1E
-#define FG_REG_VEMPTY       0x3A
+#define FG_REG_STATUS       0x00    // Status - status of the device
+#define FG_REG_FSTAT        0x3D    // FStat - status of the algorithm
+#define FG_REG_HIBCFG       0xBA    // HibCfg - hibernation configuraiton
+#define FG_REG_SOFTWAKE     0x60    // SoftWake - manually wake up the device
+#define FG_REG_MODELCFG     0xDB    // ModelCfg - configuration of model
+#define FG_REG_DESIGNCAP    0x18    // DesignCap - design capacity of battery
+#define FG_REG_ICHGTERM     0x1E    // IChgTerm - charge termination voltage
+#define FG_REG_VEMPTY       0x3A    // Vempty - voltage at empty
+#define FG_REG_REPCAP       0x05    // RepCap - remaining capacity
+#define FG_REG_TTE          0x11    // TTE - time to empty
 
 #define FG_MASK_STATUS_POR          0x2000
 #define FG_MASK_FSTAT_DNR           0x01

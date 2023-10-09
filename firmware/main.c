@@ -23,7 +23,7 @@ void main(void) {
     I2C2CON0bits.RSEN = 0x0;    // disable restart
     I2C2CON0bits.CSTR = 0x0;    // not holding the clock, operate SCL normally
     I2C2CON2bits.FME  = 0x0;    // disable Fast Mode
-    I2C2CON2bits.ABD  = 0x1;    // don't use address buffers
+    I2C2CON2bits.ABD  = 0x0;    // use address buffers, not legacy mode
     I2C2CLKbits.CLK   = 0x3;    // I2C clocked from MFINTOSC (500KHz))
     I2C2CON0bits.EN   = 0x1;    // enable the I2C module
     

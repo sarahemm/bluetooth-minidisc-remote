@@ -52,21 +52,53 @@ void fg_reconfigure(void) {
     fg_write_reg(FG_REG_HIBCFG, hib_cfg);
 }
 
-uint16_t fg_read_reg(uint8_t addr) {
-    // TODO: write this
+uint8_t fg_percent_left(void) {
+    return (uint8_t)(fg_read_reg(FG_REG_REPCAP) * 256);
 }
 
+long fg_minutes_left(void) {
+    return (long)fg_read_reg(FG_REG_TTE) * 5625 / 60000;
+}
+
+// TODO: this is unproven and almost certainly has errors
+uint16_t fg_read_reg(uint8_t addr) {
+    uint16_t buf;
+    
+    i2c_wait_for_bus_free();
+
+    // write the register we want
+    I2C_CNT = 1;  // one byte of register address
+    I2C_ADDR = FG_I2C_ADDR;
+    I2C_TXB = addr;
+    
+    i2c_start();
+    i2c_wait_for_tx_done();
+    if(!i2c_ack_received())
+        while(1) {} // TODO: something better than hanging forever
+    
+    // read the value from the register
+    I2C_CNT = 2;     // all registers are 16-bits (I think?)
+    I2C_ADDR = FG_I2C_ADDR | 0x40;   // set read bit
+    i2c_start();
+    i2c_wait_for_rx_ready();
+    buf = I2C_RXB;
+    i2c_wait_for_rx_ready();
+    buf = (uint16_t)I2C_RXB << 8;
+    
+    return buf;
+}
+
+// TODO: this is unproven and almost certainly has errors
 uint8_t fg_write_reg(uint8_t addr, uint16_t val) {
-    I2C_TXCNT = 3;   // one byte of register address, two bytes of data
-    I2C_TXB = FG_I2C_ADDR;
+    i2c_wait_for_bus_free();
+    
+    I2C_CNT = 3;   // one byte of register address, two bytes of data
+    I2C_ADDR = FG_I2C_ADDR;
     I2C_TXB = addr;
     I2C_TXB = val & 0xff;
     I2C_TXB = val >> 8 & 0xff;
     
+    i2c_start();
     i2c_wait_for_tx_done();
     return i2c_ack_received();
 }
-
-//uint8_t fg_write_reg_with_verify(uint8_t addr, uint16_t val) {
-    // TODO: write this, if we need it?
-//}

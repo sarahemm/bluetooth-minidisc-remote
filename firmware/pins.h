@@ -119,8 +119,9 @@ extern "C" {
 /* --- */
 
 #define I2C_TXB     I2C2TXB
-#define I2C_TXCNT   I2C2CNT
 #define I2C_RXB     I2C2TXB
+#define I2C_CNT     I2C2CNT
+#define I2C_ADDR    I2C2ADB1
 
 #ifdef	__cplusplus
 }
